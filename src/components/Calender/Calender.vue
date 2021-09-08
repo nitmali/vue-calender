@@ -50,8 +50,14 @@
               ]"
               :style="{ height: `${itemHeight}px`}"
               @click="checkoutDate(item)">
-              <div class="data-font calendar-item"
+              <div v-if="colorGroup"
+                   class="data-font calendar-item"
                    :style="{'background-color': colorMap[groupMap[[item.date]]] ? `${colorMap[groupMap[[item.date]]]} !important` : 'unset'}">
+                <div style="margin: auto">
+                  {{ item.day }}
+                </div>
+              </div>
+              <div v-else class="data-font calendar-item">
                 <div style="margin: auto">
                   {{ item.day }}
                 </div>
@@ -72,11 +78,13 @@
   </div>
 </template>
 
+
+
 <script>
 export default {
   name: 'Calender',
   props: {
-    // 标记日期 {date: yyyy-MM-dd, group: xxx}
+    // 标记日期 {date: yyyy-M-d, group: xxx}
     markList: {
       type: Array,
       default() {
