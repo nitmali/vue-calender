@@ -5,6 +5,17 @@
     <br/>
     <p> 不分组颜色 </p>
     <calender :mark-list="markList.map(v => v.date)" />
+
+    <div style="text-align: left">
+      <h4>参考资料</h4>
+      <ul>
+        <li>
+          <a href="http://www.dodobook.net/jquery/3091" target="view_window">
+            使用JS生成随机的Web安全色
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
