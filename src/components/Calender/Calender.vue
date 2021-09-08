@@ -51,7 +51,7 @@
               :style="{ height: `${itemHeight}px`}"
               @click="checkoutDate(item)">
               <div class="data-font calendar-item"
-                   :style="{'background-color': `${colorMap[groupMap[[item.date]]]} !important`}">
+                   :style="{'background-color': colorMap[groupMap[[item.date]]] ? `${colorMap[groupMap[[item.date]]]} !important` : 'unset'}">
                 <div style="margin: auto">
                   {{ item.day }}
                 </div>
