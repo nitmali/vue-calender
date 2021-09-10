@@ -7,7 +7,8 @@
   * ``colorGroup`` 标记日期是否分组启用时 markList 格式为[{date: yyyy-M-d, group: xxxx}]，同一组的 group 写成一样
 
 ### 演示 
-* https://vue-calender.stackblitz.i
+* https://vue-calender.stackblitz.io
 
+### dit on StackBlitz ⚡️
+* https://stackblitz.com/edit/vue-calender
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/vue-calender)
